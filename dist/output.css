@@ -649,20 +649,20 @@ video {
   height: 6rem;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-24{
   width: 6rem;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .w-36{
   width: 9rem;
 }
 
-.w-48{
-  width: 12rem;
+.w-40{
+  width: 10rem;
 }
 
 .w-60{
@@ -705,6 +705,14 @@ video {
   flex-basis: 50%;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .flex-nowrap{
   flex-wrap: nowrap;
 }
@@ -737,10 +745,6 @@ video {
   gap: 0.5rem;
 }
 
-.gap-20{
-  gap: 5rem;
-}
-
 .gap-24{
   gap: 6rem;
 }
@@ -751,6 +755,10 @@ video {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .self-center{
@@ -1180,8 +1188,8 @@ video {
     display: flex;
   }
 
-  .sm\:gap-10{
-    gap: 2.5rem;
+  .sm\:flex-row{
+    flex-direction: row;
   }
 
   .sm\:p-6{
@@ -1235,6 +1243,14 @@ video {
     display: grid;
   }
 
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
+  .md\:w-48{
+    width: 12rem;
+  }
+
   .md\:w-96{
     width: 24rem;
   }
@@ -1251,12 +1267,20 @@ video {
     flex-basis: 50%;
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:gap-12{
     gap: 3rem;
   }
 
   .md\:gap-14{
     gap: 3.5rem;
+  }
+
+  .md\:gap-20{
+    gap: 5rem;
   }
 
   .md\:px-12{
@@ -1303,6 +1327,11 @@ video {
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:text-lg{
@@ -1365,6 +1394,10 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:gap-14{
+    gap: 3.5rem;
+  }
+
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
