@@ -1,0 +1,111 @@
+---
+interface Props {
+  title?: string;
+}
+import "../styles/global.css";
+
+const { title } = Astro.props;
+
+import { CarrouselTestimonials } from "@/components/carrouselTestimonials";
+
+const Testimonials = [
+  {
+    description: `My commitment to continuous improvement is reflected in the
+              implementation of A/B testing to consistently refine our websites,
+              with the goal of delivering an outstanding online user experience.`,
+    name: "Fulanito Menganito",
+    grade: "Chief of Alcadia System",
+    img: "",
+  },
+  {
+    description: `My commitment to continuous improvement is reflected in the
+              implementation of A/B testing to consistently refine our websites,
+              with the goal of delivering an outstanding online user experience.`,
+    name: "Fulanito Menganito",
+    grade: "Chief of Alcadia System",
+    img: "",
+  },
+  {
+    description: `My commitment to continuous improvement is reflected in the
+              implementation of A/B testing to consistently refine our websites,
+              with the goal of delivering an outstanding online user experience.`,
+    name: "Fulanito Menganito",
+    grade: "Chief of Alcadia System",
+    img: "",
+  },
+  {
+    description: `My commitment to continuous improvement is reflected in the
+              implementation of A/B testing to consistently refine our websites,
+              with the goal of delivering an outstanding online user experience.`,
+    name: "Fulanito Menganito",
+    grade: "Chief of Alcadia System",
+    img: "",
+  },
+  {
+    description: `My commitment to continuous improvement is reflected in the
+              implementation of A/B testing to consistently refine our websites,
+              with the goal of delivering an outstanding online user experience.`,
+    name: "Fulanito Menganito",
+    grade: "Chief of Alcadia System",
+    img: "",
+  },
+  {
+    description: `My commitment to continuous improvement is reflected in the
+              implementation of A/B testing to consistently refine our websites,
+              with the goal of delivering an outstanding online user experience.`,
+    name: "Fulanito Menganito",
+    grade: "Chief of Alcadia System",
+    img: "",
+  },
+  {
+    description: `My commitment to continuous improvement is reflected in the
+              implementation of A/B testing to consistently refine our websites,
+              with the goal of delivering an outstanding online user experience.`,
+    name: "Fulanito Menganito",
+    grade: "Chief of Alcadia System",
+    img: "",
+  },
+];
+// const backG =document.getElementById("bg")
+// console.log(backG);
+
+var setColor = Math.floor(Math.random() * 5) + 1;
+// setInterval(function () {
+//   setColor = Math.floor(Math.random() * 5) + 1;
+// }, 1000);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div id="bg" class={`bg-color${setColor} p-3 sm:p-6 font-inter`}>
+      <div class="bg-white rounded-xl text-neutral-800 overflow-hidden">
+        <div class="bg-color1 hidden"></div>
+        <div class="bg-color2 hidden"></div>
+        <div class="bg-color3 hidden"></div>
+        <div class="bg-color4 hidden"></div>
+        <div class="bg-color5 hidden"></div>
+        <div class="bg-color6 hidden"></div>
+        <slot />
+        <div class="px-8 sm:px-24 mb-12">
+          <div class="text-xs uppercase tracking-widest mb-20 font-bold">
+            People I work with
+          </div>
+          <CarrouselTestimonials client:only="react" items={Testimonials} />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+</style>
