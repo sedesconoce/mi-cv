@@ -21,7 +21,9 @@ export function CarrouselTestimonials({ items }: { items: any[] }) {
           align: "start",
         }}
       >
-        <div className="hidden md:flex justify-end pb-4 gap-2">
+         
+
+        <div className="md:flex justify-end pb-4 gap-2">
           <CarouselPrevious className="-top-4 z-10 right-12 hover:bg-blue-200 hover:border-color2 hover:opacity-70 transition duration-200 ease-in-out rounded-full" />
           <CarouselNext className="top-0 z-10 right-0 hover:bg-blue-200 hover:border-color2 hover:opacity-70 transition duration-200 ease-in-out rounded-full" />
         </div>
@@ -39,7 +41,7 @@ export function CarrouselTestimonials({ items }: { items: any[] }) {
                         {e.description}
                       </div>
                       <div className="sm:flex gap-4">
-                        <div className="w-24 h-24 bg-neutral-800 rounded-full"></div>
+                        <div className="flex-none"><img className="w-28 h-28 rounded-full" src={e.img} /></div>
                         <div className="grid content-center mt-4 sm:mt-0">
                           <h5 className="font-bold text-sm mb-1">{e.name}</h5>
                           <div className="text-xs uppercase tracking-wide text-green-700">

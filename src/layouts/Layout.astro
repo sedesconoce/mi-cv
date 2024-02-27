@@ -10,36 +10,24 @@ import { CarrouselTestimonials } from "@/components/carrouselTestimonials";
 
 const Testimonials = [
   {
-    description: `My commitment to continuous improvement is reflected in the
-              implementation of A/B testing to consistently refine our websites,
-              with the goal of delivering an outstanding online user experience.`,
-    name: "Fulanito Menganito",
-    grade: "Chief of Alcadia System",
-    img: "",
+    description: `Juan Miguel one of the most talented designers and marketers I have ever met. His creativity single handedly catapulted Peru For Less into a high converting lead engine that now grosses $17+ million in revenue a year. His ability conceptualize, test, and execute successful designs and campaigns makes him one of the best in his field. Any company would be lucky to have him`,
+    name: "Manuel Sanchez-Palacio",
+    grade: "Head of performance Marketing @ Bald.agency",
+    img: "images/face-manuel.jpg",
+  },
+  {
+    description: `Juan Miguel is easily one of the more talented individuals I've had the pleasure of working with. He has a deep understanding of UX and could always translate this to meet the needs of the business, staff and customers. It goes without saying that he is a creative individual with a great technical aptitude, but his patience, collaborative nature and project management skills really set him apart. When working together, I was greatly impressed at his seeing several key projects through from start to finish, including a revamped main website, the launch of a new website featuring the new luxury brand and a customized itinerary tool - each were key drivers for the business's continuing success.`,
+    name: "Monique Loayza",
+    grade: "Global Operations Manager, ExperienceFirst",
+    img: "images/face-monique.jpg",
   },
   {
     description: `My commitment to continuous improvement is reflected in the
               implementation of A/B testing to consistently refine our websites,
               with the goal of delivering an outstanding online user experience.`,
-    name: "Fulanito Menganito",
-    grade: "Chief of Alcadia System",
-    img: "",
-  },
-  {
-    description: `My commitment to continuous improvement is reflected in the
-              implementation of A/B testing to consistently refine our websites,
-              with the goal of delivering an outstanding online user experience.`,
-    name: "Fulanito Menganito",
-    grade: "Chief of Alcadia System",
-    img: "",
-  },
-  {
-    description: `My commitment to continuous improvement is reflected in the
-              implementation of A/B testing to consistently refine our websites,
-              with the goal of delivering an outstanding online user experience.`,
-    name: "Fulanito Menganito",
-    grade: "Chief of Alcadia System",
-    img: "",
+    name: "Gabriella Smith",
+    grade: "Product Designer at Icelolly.com and TravelSupermarket.com",
+    img: "images/face-gabi.jpg",
   },
   {
     description: `My commitment to continuous improvement is reflected in the
@@ -88,14 +76,15 @@ var setColor = Math.floor(Math.random() * 5) + 1;
   <body>
     <div id="bg" class={`bg-color${setColor} p-3 sm:p-6 font-inter`}>
       <div class="bg-white rounded-xl text-neutral-800 overflow-hidden">
-        <div class="bg-color1 hidden"></div>
+        <!-- <div class="bg-color1 hidden"></div> -->
         <div class="bg-color2 hidden"></div>
         <div class="bg-color3 hidden"></div>
-        <div class="bg-color4 hidden"></div>
+        <!-- <div class="bg-color4 hidden"></div> -->
         <div class="bg-color5 hidden"></div>
         <div class="bg-color6 hidden"></div>
         <slot />
         <div class="px-8 sm:px-24 mb-12">
+          <!-- <hr class="my-20 mx-6 sm:mx-12" /> -->
           <div class="text-xs uppercase tracking-widest mb-20 font-bold">
             People I work with
           </div>
