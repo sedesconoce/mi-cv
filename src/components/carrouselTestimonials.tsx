@@ -33,7 +33,7 @@ export function CarrouselTestimonials({ items }: { items: any[] }) {
               {items.map((e, idx) => (
                 <CarouselItem
                   key={idx}
-                  className="basis-[25rem] sm:basis-[27rem] md:basis-auto pl-8 xl:basis-1/6"
+                  className="basis-[25rem] sm:basis-[27rem] md:basis-auto pl-8 xl:basis-1/5"
                 >
                   <div className="flex flex-nowrap gap-12">
                     <div className="w-80 md:w-96 shrink-0">
@@ -46,6 +46,9 @@ export function CarrouselTestimonials({ items }: { items: any[] }) {
                           <h5 className="font-bold text-sm mb-1">{e.name}</h5>
                           <div className="text-xs uppercase tracking-wide text-green-700">
                             {e.grade}
+                          </div>
+                          <div className="text-xs uppercase tracking-wide">
+                            {e.formal}
                           </div>
                         </div>
                       </div>
